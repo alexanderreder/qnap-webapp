@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>QNAP Web Applications</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 15px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #007BFF;
-            padding: 10px 15px;
-            border-radius: 5px;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-        a:hover {
-            background-color: #0056b3;
-        }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var host = window.location.hostname;
-            var protocol = window.location.protocol;
-            document.getElementById('link-carstats').href = protocol + "//" + host + ":8081/";
-            document.getElementById('link-teaching').href = protocol + "//" + host + ":8082/";
-        });
-    </script>
-</head>
-<body>
-    <div class="container">
-        <h1>QNAP Web Applications</h1>
-        <p>Welcome! Please select an application below:</p>
-        <ul>
-            <li><a id="link-carstats" href="#">Car Statistics App</a></li>
-            <li><a id="link-teaching" href="#">Teaching App</a></li>
-        </ul>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>QNAP Web Applications</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 40px;
+                background-color: #f4f4f9;
+                color: #333;
+            }
+            h1 {
+                color: #4CAF50;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 15px 0;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                background-color: #007BFF;
+                padding: 10px 15px;
+                border-radius: 5px;
+                display: inline-block;
+                transition: background-color 0.3s ease;
+            }
+            a:hover {
+                background-color: #0056b3;
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var host = window.location.hostname;
+                var protocol = window.location.protocol;
+                document.getElementById('link-carstats').href = protocol + "//" + host + ":8082/";
+                document.getElementById('link-teaching').href = protocol + "//" + host + ":8083/";
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>QNAP Web Applications</h1>
+            <p>Welcome! Please select an application below:</p>
+            <ul>
+                <li><a id="link-carstats" href="#">Car Statistics App</a></li>
+                <li><a id="link-teaching" href="#">Teaching App</a></li>
+            </ul>
+        </div>
+    </body>
 </html>
